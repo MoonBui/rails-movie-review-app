@@ -1,0 +1,8 @@
+<ul>
+    <% @movies.each do |movie| %>
+        <li> <strong> <%= movie.title %> </strong> </li>
+        <p> Desc: <%= movie.description %> </p>
+        <p> Released date: <%= year_of(movie) %> </p>
+        <p> Gross Total: <%= total_gross(movie) %> </p>
+    <%end%>
+</ul>
